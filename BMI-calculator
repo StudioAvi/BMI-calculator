@@ -1,0 +1,23 @@
+weight = float(input("Enter your weight (kg, e.g. '68'): "))
+height = float(input("Enter your height (m, e.g. '1.73'): "))
+
+print("Your weight is: ", weight)
+print("Your height is: ", height)
+
+BMI = round(weight/height**2, 1)
+print("Your BMI is ", BMI)
+
+if BMI < 18.5:
+    print("Underweight")
+elif BMI > 18.5 and BMI < 25.9:
+    print("Normal weight")
+elif BMI > 25.0 and BMI < 30.0:
+    print("Overweight")
+elif BMI >30.0 and BMI < 35.0:
+    print("Obese class I")
+elif BMI > 35.0 and BMI < 40.0:
+    print("Obese class II")
+elif BMI > 40.0:
+    print("Obese class III - max thicc")
+else:
+    print("Error")
